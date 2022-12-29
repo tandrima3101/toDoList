@@ -1,0 +1,131 @@
+.main_container{
+  background-color: #1a202c;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.inside_container{
+  width: 30%;
+}
+.container_heading{
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  background: -webkit-linear-gradient(#E53E3E, #D69E2E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.image_attribute{
+  width: 300px;
+  margin: 20px 0px;
+}
+ul {
+  list-style: none;
+  border: 2px solid #fff;
+  margin: 20px 0px;
+  padding: 20px;
+}
+form{
+  display: flex;
+  align-items: center;
+}
+button{
+  background-color: #a9dcfa;
+  padding: 11px 20px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn_container{
+  display: flex;
+  justify-content: center;
+}
+li, input {
+  display: block;
+  width: 100%;
+  background: #232934;
+  border: 0px solid #000;
+  padding: 16px;
+  margin: 12px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.text{
+  color: #fff;
+}
+.remove {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  margin: 0 0 0 16px;
+  padding: 0;
+  flex: 0 0 16px;
+  border: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.removeAll{
+  background-color: #2c323c;
+  color: red;
+  margin-top: 20px;
+}
+
+.remove::before,
+.remove::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  height: 100%;
+  width: 2px;
+  background: #000;
+}
+
+.remove::before {
+  transform: rotate(-45deg);
+}
+
+.remove::after {
+  transform: rotate(45deg);
+}
+
+.remove:focus {
+  outline: none;
+  background: #000;
+  color: #fff;
+}
+
+.remove:focus::before,
+.remove:focus::after {
+  background: #fff;
+}
+
+li:focus,
+input:focus {
+  border: 1px solid #a9dcfa;
+  outline: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+li.complete {
+ 
+}
+
+li.complete div {
+  text-decoration: line-through;
+}
